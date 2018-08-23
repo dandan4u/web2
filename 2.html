@@ -1,0 +1,172 @@
+<! doctype html>
+
+<html>
+<head>
+<title> CSS </title>
+
+<meta charset="utf-8">
+/*char : 글자, set : 규칙*/<br>
+
+<!--
+CSS사용한다는것을 style테그로 표현
+style 테그 아래의 a는 모든 a테그에 대해 적용한다는 의미다.
+-->
+  <style>
+    #now{
+      color:blue; font-size: 30px;
+    }
+
+    .point{
+      color:red;
+    }
+    .saw{
+      color:gray;
+    }
+
+    a{
+      color:black;
+      text-decoration:none;
+    }
+    h1{
+      font-size:60px; text-align: center;
+      }
+    img{
+      outline-style:double;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <h1><a href = "index.html">WEB</h1>
+    <h4> 목차 </h4>
+    <h3>프로그래밍</h3>
+    <ol>
+      <li><a href = "1.html" class = "saw">HTML</a></li>
+      <li><a href = "2.html" class = "saw" id="now">CSS</a></li>
+      <li><a href = "3.html">Java Script</a></li>
+      <li><a href = "example.html">example</a></li>
+    </ol>
+
+    <h3>조선업</h3>
+<ul>
+  <li><a href = "ship1.html">1. 개요</a></li><br>
+</ul>
+<ul>
+  <li><a href = "ship2.html">2. 역사</a></li><br>
+</ul>
+<ul>
+  <li><a href = "ship3.html">3. 대형 조선 회사</a></li><br>
+</ul>
+<ul>
+  <li><a href = "ship4.html">4. 조선소 풍경</a></li><br>
+</ul>
+<ul>
+  <li><a href = "ship5.html">5.1. 건조 계획 수립 및 건조업체 선정</a></li><br>
+  <li><a href = "ship5-1.html">5.2. 설계</a></li><br>
+  <li><a href = "ship5-2.html">5.5. 선행</a></li><br>
+  <li><a href = "ship5-6.html">5.6. P.E</a></li><br>
+  <li><a href = "ship5-8.html">5.8. 진수</a></li><br>
+  <li><a href = "ship5-9.html">5.9. 마무리 의장작업</a></li><br>
+  <li><a href = "ship5-11.html">5.11. 취역 및 인도</a></li><br>
+</ul>
+
+<!--
+    CSS나오기 전에 쓰인 디자인 테그 <font>
+    <font color = "red">CSS</font>
+-->
+CSS나오기 전에 쓰인 디자인 테그 &lt;font&gt;<dr>
+&lt;font color = "red"&gt;CSS&lt;/font&gt;<dr><dr>
+<ol>
+  <li>
+    <h3>CSS의 구조</h3>
+    <img src = "img\CSS_intro.jpg">
+
+    <a href="https://www.youtube.com/watch?v=nC2-nJEXL2U&index=5&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B"
+    target="blank">
+      &lt;출처 : 생활코딩 &gt;
+    </a>
+  </li><dr><dr>
+
+  <li>
+    <h3>style 선언과 선택자</h3>
+    <p>CSS사용한다는것을 style테그로 표현</p>
+    <p>style 테그 아래의 a,h1은 '선택자' 라고 부르며</p>
+    <p><strong class="point">↓</strong>모든 a테그에 대해 적용한다는 의미다.</p>
+    <img src = "img\font_tag.jpg">
+  </li><dr><dr>
+
+  <li>
+    <h3> CSS를 개별 적용할 때 </h3>
+    <p>이것은 HTML이 아니라 CSS언어라는걸 알리기 위해 'style'이라고 선언</p>
+    <p>색 조정을 위해 color 변수 선언 후, blue라는 값 입력.</p>
+    <p><strong class="point">↓</strong>밑줄을 치기위해 text-decoration 변수 선언 후 underline이라는 값 입력</p>
+    <img src = "img\font_tag1.jpg">
+  </li><dr><dr>
+
+  <li>
+    <h3> CSS 일괄적용 할 때</h3>
+    <p><strong class="point">↓</strong>
+      아래와 같이 .point라고 선언해야 class의 값인 point를 선택자로 지정한다</p>
+    <p><img src = "img\selector.jpg" border="4">
+      <img src = "img\selector2.jpg" border="4"></p>
+    <p><img src = "img\selector3.jpg" border="4"></p>
+    <p><strong class="point">↓</strong>결과... 모든 화살표가 녹색으로 바뀌었다.</p>
+    <p><img src = "img\selector4.jpg" border="4"></p>
+    <p><strong class="point">↓</strong>잘 안보인다. 정열의 빨강으로 바꾸겠다.
+    <p><img src = "img\selector5.jpg" border="4"></p>
+    <p><strong class="point">↓</strong>그냥 point로 하면은 동작하지 않는다 결과 화면은 캡쳐뜨기 귀찮으니 pass한다.</p>
+    <p><img src = "img\selector1.jpg" border="4"></p>
+  </li>
+  <li>
+    <h3>우선순위</h3>
+    <p><strong class="point">↓</strong>
+      HTML과 CSS패이지 하이퍼링크를 과거에 이미 읽었다고 표시하기 위해 회색으로 바꿔봤다</p>
+    <p><img src = "img\priority.jpg" border="4"> <img src ="img\priority1.jpg" border="4"></p>
+
+    <p><strong class="point">↓</strong>
+      현재 CSS페이지에 있다고 파란색으로 표시하고 싶어졌다.</p>
+    <p><img src = "img\priority2.jpg" border="4"> <img src = "img\priority3.jpg"></p>
+
+    <p>클래스선택자.saw와 .now의 명령 우선순위는 동등하다. 동등하기 때문에 더 최근에 내려진 명령이 우선시된다</p>
+    <p><strong class="point">↓</strong>
+      클래스선택자.saw와 .now의 순서를 바꿔보면 .saw가 우선시 되어 CSS가 회색으로 표시되는걸 볼 수 있다.</p>
+    <p><img src = "img\priority4.jpg"> <img src = "img\priority1.jpg"></p>
+
+    <p>id선택자는 클래스선택자보다 더 우선시되어 수행된다.</p>
+    <p>따라서 클래스선택자.now가 id선택자 #now로 바뀌는 순간</p>
+    <p><strong class="point">↓</strong>클래스선택자.saw와 .now의 순서가 바뀌더라도 #now가 먼저 수행된다.</p>
+    <p><img src = "img\priority5.jpg"> <img src = "img\priority6.jpg"></p>
+
+    <p>명령 우선순위 <ul>id선택자가 1위</ul>, <ul>클래스선택자 2위</ul>, <ul>테그선택자 3위</ul>로 다음과 같이 실행해도 결과는 같다.
+      <strong class="point">↓</strong></p>
+    <p><img src = "img\priority7.jpg"> <img src = "img\priority6.jpg"></p>
+    <p>id선택자의 id값이 1순위 인것은 그 존재가 유일무이하기 때문이다.</p>
+    <p>물론 여러번 등장해도 동작을 하겠지만 그 문서에 오로지 하나밖에 없어야 한다는게 원칙이다.</p>
+    <p>CSS개발자들은 좀 더 <strong>구채적인 것(id선택자)</strong>을 좀 더 <strong>포괄적인 것(테그선택자)</strong>보다 우선순위가 높도록 개발을 해놨다</p>
+    <p>좀 더 많은 정보는 <a href = "https://www.google.co.kr/search?q=css+selector+reference&oq=css+selector+refe&aqs=chrome.1.69i57j0l5.10063j0j7&sourceid=chrome&ie=UTF-8" target="blank">
+      'CSS selector reference'</a>를 검색해 보자</p>
+
+
+</body>
+</html>
+
+<!-- 라이브리 시티 설치 코드 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zODk3OS8xNTUwNg==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+<!-- 시티 설치 코드 끝 -->
